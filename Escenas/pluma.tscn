@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c3skaefb6h6ue"]
+
+[ext_resource type="Script" uid="uid://dccfpncnen8ac" path="res://Codigo/pluma.gd" id="1_jjpp5"]
+[ext_resource type="Texture2D" uid="uid://byoj75443o6xy" path="res://Sprite/WhatsApp Image 2026-11-09 at 19.10.35.jpeg" id="1_mucgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xvx6h"]
+size = Vector2(64, 56)
+
+[node name="Pluma" type="Area2D" unique_id=1663766418]
+position = Vector2(66, 102)
+script = ExtResource("1_jjpp5")
+metadata/_edit_group_ = true
+
+[node name="WhatsAppImage20261109At19_10_35" type="Sprite2D" parent="." unique_id=538123968]
+position = Vector2(22, -2)
+texture = ExtResource("1_mucgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1402805690]
+position = Vector2(22, -2)
+shape = SubResource("RectangleShape2D_xvx6h")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

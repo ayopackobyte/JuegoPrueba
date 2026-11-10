@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dftmjn281jk2y"]
+
+[ext_resource type="PackedScene" uid="uid://byno03opmke3f" path="res://Escenas/Player.tscn" id="1_ryhbh"]
+[ext_resource type="PackedScene" uid="uid://ctevrl7dwwy3l" path="res://Escenas/Plataforma.tscn" id="2_vwc7f"]
+[ext_resource type="PackedScene" uid="uid://c3skaefb6h6ue" path="res://Escenas/pluma.tscn" id="3_vwc7f"]
+
+[node name="Nivel1" type="Node2D" unique_id=598462174]
+
+[node name="Player" parent="." unique_id=390031543 instance=ExtResource("1_ryhbh")]
+position = Vector2(78, 122)
+metadata/_edit_lock_ = true
+
+[node name="Plataforma" parent="." unique_id=1937376806 instance=ExtResource("2_vwc7f")]
+position = Vector2(-20, 65)
+
+[node name="Pluma" parent="." unique_id=1663766418 instance=ExtResource("3_vwc7f")]
+position = Vector2(605, 237)
